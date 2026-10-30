@@ -31,8 +31,7 @@ export class AppMenuItem extends Component {
         this.webIconData = getWebIconData(nextProps.app);
     }
 
-    onClick(ev) {
-        ev.preventDefault();
+    onClick() {
         if (typeof this.props.onClick === "function") {
             this.props.onClick(this.props.app);
         }
